@@ -1,3 +1,5 @@
+## Part 1: Azure Container Deployment using AZ CLI
+
 ```
 Example:
 export RESOURCE_GROUP=lxgroup
@@ -36,3 +38,4 @@ az container list --resource-group ${RESOURCE_GROUP} --output table
 az group delete --name ${RESOURCE_GROUP}
 
 ```
+
