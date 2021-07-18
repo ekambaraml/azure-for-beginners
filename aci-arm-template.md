@@ -8,10 +8,14 @@ export ACI_NAME=lxdemo
 export DNS_LABEL=lx-aci-demo
 ```
 
-```
+![Validataion](https://github.com/ekambaraml/azure-for-beginners/blob/main/Screen%20Shot%202021-07-18%20at%2011.58.38%20AM.png)
 
-```
 
+![deployment inprogress](https://github.com/ekambaraml/azure-for-beginners/blob/main/Screen%20Shot%202021-07-18%20at%2011.59.25%20AM.png)
+
+![result](https://github.com/ekambaraml/azure-for-beginners/blob/main/Screen%20Shot%202021-07-18%20at%2011.59.49%20AM.png)
+
+![result](https://github.com/ekambaraml/azure-for-beginners/blob/main/Screen%20Shot%202021-07-18%20at%2012.00.23%20PM.png)
 
 ### Template
 ```
