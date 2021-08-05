@@ -129,13 +129,15 @@ Reach out to account admin to increase the increase your default limit
 
 
 #### 3.0 Bastion Preparation
+3.1 Azure CLI setup
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=dnf
 
-3.1. Download Installer
+3.2. Download OpenShift Installer
 
 wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-install-linux.tar.gz
 
-3.2 Download OpenShift CLI
+3.3 Download OpenShift CLI
 
 wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-client-linux.tar.gz
 
-3.3 Download Openshift PullSecret
+3.4 Download Openshift PullSecret
