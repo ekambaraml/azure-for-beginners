@@ -101,6 +101,20 @@ Azure VM specifications https://docs.microsoft.com/en-us/azure/virtual-machines/
 The default subscription only allows for 20 vCPU's and will need to be increased to at least 22. If you intend to start with a higher number of workers, enable autoscaling and large workloads or a different instance type, please ensure you have the necessary remaining instance count within the instance type's limit to satisfy the need. If not, please ask Azure to increase the limit via a support case.
 
 
+Service | count | Description
+--------|-------|------------
+VPC | 1 | Virtual Private Subnet
+Subnets | 2 | Control Plane, Data plane
+Network Security Group | 2 | master, worker
+VMs | 8 | 1 Bastion (4 core, 1 Bootstrap Node(8core) (temporary), 3 Master (8 core each), 3 Worker (16core each)
+Network Interface | 8 | each machine per 1
+Network Loadbalancer | 3 | 1 Internal, 2 public
+Public IPs | 3/1 | per external IPs
+Private IPs | 11 | Per node , loadbalancers
+
+
+
+
 ## 2.6 Load Balancing
 
 By default, each cluster will create 3 network load balancers. The default limit per region is 1000. The following load balancers are created:
@@ -119,16 +133,12 @@ Additional Kuberntes LoadBalancer Service objects will create additional [load b
 Reach out to account admin to increase the increase your default limit 
 
 
-
-4. [Account](account.md)
-
 ## 2.8 [Credentials](credentials.md)
-6.
-7. [Cluster Installation](install.md)
 
 
 
-#### 3.0 Bastion Preparation
+
+# 3.0 Bastion Preparation
 3.1 Azure CLI setup
 https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=dnf
 
@@ -141,3 +151,7 @@ wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.6.30/openshift-
 wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-client-linux.tar.gz
 
 3.4 Download Openshift PullSecret
+
+# 4.0 Installation
+
+# 5.0 Post install 
