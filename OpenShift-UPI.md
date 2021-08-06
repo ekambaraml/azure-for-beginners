@@ -134,7 +134,7 @@ https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=dnf
 
 3.2. Download OpenShift Installer
 
-wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-install-linux.tar.gz
+wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.6.30/openshift-install-linux.tar.gz
 
 3.3 Download OpenShift CLI
 
